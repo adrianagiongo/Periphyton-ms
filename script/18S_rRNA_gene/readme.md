@@ -22,7 +22,6 @@ library("Biostrings")\
 library("phyloseq")\
 library("microbiome")\
 library("vegan")\
-library("DESeq2") \
 library("dplyr")\
 library("stringr")\
 library("ggpubr")\
@@ -34,7 +33,7 @@ library("RColorBrewer")
 ### 1. Dada2
 This script uses the raw data obtained from the BioProject SRA.\
 A R server is required. \
-Database used: [SILVA 138 SSU](https://www.arb-silva.de/documentation/release-138/) 
+Database used: [SILVA 138 SSU](https://www.arb-silva.de/documentation/release-138/)
 
 ### 2. Creating phyloseq object
 This script creates a phyloseq object based on these files:
@@ -54,6 +53,8 @@ This script removes unwanted taxonomic groups from the dataset.
 - Chloroplasts (Order)
 - Mitochondria (Family)
 
+ASVs belonging to Ciliophora were manually curated at genus level with a Megablast nucleotide search against the NCBI non-redundant nucleotide database. 
+
 ### 5. Data selection
 This script selects a group of samples to be analyzed separately.
 
@@ -64,7 +65,4 @@ This script performs rarefaction based on the minimum sequences.
 This script calculates alpha diversity based on the rarefied data.
 
 ### 8. Ordination 
-This script creates MDS plots and calculates PERMANOVA and ANOSIM based on the rarefied data.
-
-### 9. DESeq2
-Based on the rarefied data, this script performs differential abundance (DA) between two groups.
+This script creates MDS plots and calculates PERMANOVA and ANOSIM.
