@@ -23,7 +23,10 @@ This work was supported by a CNPq fellowship granted to LRPU. This study was als
 ### More info
 [Research Group Aquatic Biology PUCRS](http://dgp.cnpq.br/dgp/espelhogrupo/6472909354294187)
 
-## Submitted 
+### Submission
+Submitted to [Microbial Ecology](https://link.springer.com/journal/248) on 02.12.2022.\
+Accepted on 05.02.2023.
+
 
 
 
